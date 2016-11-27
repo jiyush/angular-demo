@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myFirstApp">
   <head>
     <meta charset="utf-8">
     <title>test page</title>
   </head>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js">
+  <script src="angular.min.js">
+</script>
+<script src="app.js">
 </script>
   <body>
-    <div ng-app="">
+<div ng-controller="myFirstController">
+  <h1>Name Calculater</h1>
+<p>  <input type="text" ng-model="name" ng-keyup="display();"></p>
+<p>Total numeric value of name: {{totalvalue}} </p>
 
-    <p>
-      <input type="text" ng-model="name">
-    </p>
-    <h1>
-      {{name}}
-    </h1>
-    </div>
+
+</div>
   </body>
 </html>
